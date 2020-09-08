@@ -7,10 +7,42 @@ font-weight: normal;
 font-style: normal;
 }
 @font-face {
+font-family: 'Myriad Pro Regular';
+src: url("../fonts/MyriadPro-Regular.eot") format('eot'),
+url("../fonts/MyriadPro-Regular.woff") format('woff'),
+url("../fonts/MyriadPro-Regular.ttf") format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Roboto Light';
+src: url("../fonts/Roboto-Light.eot") format('eot'),
+url("../fonts/Roboto-Light.woff") format('woff'),
+url("../fonts/Roboto-Light.ttf") format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
 font-family: 'Aleo Light';
 src: url("../fonts/aleolight.woff2") format('woff2'),
 url("../fonts/aleolight.woff") format('woff'),
 url("../fonts/aleolight.ttf") format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Aleo Bold';
+src: url("../fonts/aleobold.woff2") format('woff2'),
+url("../fonts/aleobold.woff") format('woff'),
+url("../fonts/aleobold.ttf") format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Abril Fatface Regular';
+src: url("../fonts/Abrilfatfaceregular.woff2") format('woff2'),
+url("../fonts/Abrilfatfaceregular.woff") format('woff'),
+url("../fonts/Abrilfatfaceregular.ttf") format('truetype');
 font-weight: normal;
 font-style: normal;
 }
