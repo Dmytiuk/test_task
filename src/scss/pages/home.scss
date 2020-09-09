@@ -94,6 +94,33 @@ h1,h2,h3,h4,h5,h6{
   }
   &__asset{
     margin-right: 5%;
+    svg{
+      transition: .4s;
+      g{
+        g{
+          path{
+            transition: .4s;
+          }
+        }
+      }
+    }
+    &:hover svg{
+      transform: rotate(360deg);
+      g{
+        g{
+          path{
+            fill: #000000;
+          }
+        }
+      }
+    }
+    h3{
+      transition: .4s;
+    }
+    &:hover h3{
+      transform: rotate(360deg);
+      color: #c9c9c9;
+    }
   }
   &__image{
     width: 45%;

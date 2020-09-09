@@ -80,5 +80,10 @@
     max-width: 100%;
     border: 1px solid #000000;
     border-radius: 50%;
+    transition: .4s;
+    &:hover{
+      box-shadow: 2px 2px 10px #000000;
+      filter: blur(1px);
+    }
   }
 }

@@ -145,6 +145,7 @@ $slick-opacity-not-active: 0.25 !default;
     width: 100%;
     li {
         position: relative;
+        transition: .4s;
         display: inline-block;
         height: 12px;
         width: 12px;
@@ -169,6 +170,7 @@ $slick-opacity-not-active: 0.25 !default;
             visibility: hidden;
             &:hover, &:focus {
                 outline: none;
+                box-shadow: 2px 2px 5px #000000;
                 &:before {
                     opacity: $slick-opacity-on-hover;
                 }

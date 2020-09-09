@@ -5,12 +5,15 @@
     <title>Title</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/animate.css">
+    <script src="dist/js/main.js" ></script>
+    <script src="dist/js/wow.js" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header class="container header">
+<header class="header">
     <div class="header__logo">
       <span> test </span>
     </div>
@@ -20,16 +23,16 @@
         </div>
         <div class="header__section">
           <div class="header__item">
-            <span class="header__heading">menu</span>
+          <a href="#"> <span class="header__heading">menu</span></a>
           </div>
           <div class="header__item">
-            <button type="button" name="button">
+            <a type="button" name="button">
             <img class="svg" src="./src/img/menu_bag.svg" alt="">
             <span class="header__heading">1</span>
-            </button>
+          </a>
           </div>
             <div class="header__menu">
-              <button class="header__menu-btn">  <img class="svg" src="./src/img/menu_icon.svg" alt=""> <span class="header__heading">Alex</span> </button>
+              <a class="header__menu-btn">  <img class="svg" src="./src/img/menu_icon.svg" alt=""> <span class="header__heading">Alex</span> </a>
               <div class="header__dropdown">
                 <a href="#">Settings</a>
                 <a href="#">Log out</a>
@@ -37,8 +40,15 @@
             </div>
     </nav>
   </div>
+  <div class="header__menubtn">
+        <button class="menuBtn">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </button>
+    </div>
 </header>
-<nav id="cd-vertical-nav" >
+<nav class="wow fadeInRight animated" id="cd-vertical-nav" >
     <ul>
         <li>
             <a class="navlink" href="#section1" data-number="1">
@@ -75,8 +85,8 @@
 
 <section id="section1" class="slider__wrap">
   <div class="slider__info">
-    <h1>Launching Soon</h1>
-    <button type="button" name="button">register interest</button>
+    <h1 class="wow fadeInDown animated">Launching Soon</h1>
+    <button type="button" name="button" class="wow fadeInUp animated">register interest</button>
   </div>
   <div class="slider single-item">
   <div class="">
@@ -92,28 +102,28 @@
 </section>
 <section id="section2" class="section row">
 <div class="section__image">
-  <img src="./src/img/section.jpg" alt="">
-  <h2>Why use <br> Test</h2>
+  <img class="wow fadeInLeft animated" src="./src/img/section.jpg" alt="">
+  <h2 class="wow fadeInRight animated">Why use <br> Test</h2>
 </div>
 <div class="section__inner">
-  <div class="section__block">
+  <div class="section__block wow fadeInRight animated">
     <h4>Tableware</h4>
     <p class="section__text">Browse exciting products from a selection of quality makers, all in one place</p>
   </div>
-  <div class="section__block">
+  <div class="section__block wow fadeInLeft animated">
     <h4>Products Just For You</h4>
     <p class="section__text">Our technology will do all the hard work &  recommend products that fit well with  your customer profile, based on what your competition is doing.</p>
   </div>
-  <div class="section__block">
+  <div class="section__block wow fadeInRight animated">
     <h4>Test It In Your Store</h4>
     <p class="section__text">Our test & return feature will make it easy for you to find that bestseller, delight your customers & keep them coming back for more </p>
   </div>
 </div>
 </section>
 <section id="section3" class="section grey">
-  <h3 class="marg">Buying for your store  <br> &nbsp; &nbsp; has never been easier</h3>
+  <h3 class="marg wow fadeInLeft animated">Buying for your store  <br> &nbsp; &nbsp; has never been easier</h3>
   <div class="section__inner">
-    <div class="section__block">
+    <div class="section__block wow fadeInDown animated">
     <div class="section__asset">
       <img class="svg" src="./src/img/section_block1.svg" alt="">
     </div>
@@ -122,7 +132,7 @@
         <p class="section__text">Sparkinity is completely free for retailers. No markups or fees</p>
       </div>
     </div>
-    <div class="section__block">
+    <div class="section__block wow fadeInUp animated">
       <div class="section__asset">
         <img class="svg" src="./src/img/section_block2.svg" alt="">
       </div>
@@ -131,7 +141,7 @@
         <p class="section__text">In depth profiles on makers, see who you are buying from and how they rate</p>
       </div>
     </div>
-    <div class="section__block">
+    <div class="section__block wow fadeInDown animated">
       <div class="section__asset">
         <img class="svg" src="./src/img/section_block3.svg" alt="">
       </div>
@@ -140,7 +150,7 @@
         <p class="section__text">Send back any products that don’t sell within 90 days</p>
       </div>
     </div>
-    <div class="section__block">
+    <div class="section__block wow fadeInUp animated">
       <div class="section__asset">
         <img class="svg" src="./src/img/section_block4.svg" alt="">
       </div>
@@ -149,7 +159,7 @@
         <p class="section__text">Reporting and data analytics on trends in your business sector</p>
       </div>
     </div>
-    <div class="section__block">
+    <div class="section__block wow fadeInDown animated">
       <div class="section__asset">
         <img class="svg" src="./src/img/section_block5.svg" alt="">
       </div>
@@ -158,7 +168,7 @@
         <p class="section__text">Low opening order minimums for most makers</p>
       </div>
     </div>
-    <div class="section__block">
+    <div class="section__block wow fadeInUp animated">
       <div class="section__asset">
         <img class="svg" src="./src/img/section_block6.svg" alt="">
       </div>
@@ -170,9 +180,9 @@
   </div>
 </section>
 <section id="section4" class="section no-marg">
-  <h2 class="marg">How Test Works</h2>
+  <h2 class="marg wow fadeInLeft animated">How Test Works</h2>
   <div class="section__inner">
-    <div class="section__block">
+    <div class="section__block wow fadeInUp animated">
     <div class="section__asset">
       <h3>01</h3>
     </div>
@@ -181,7 +191,7 @@
         <p class="section__text">Select products from a wide variety of talented & quality Makers and place your order</p>
       </div>
     </div>
-    <div class="section__block">
+    <div class="section__block wow fadeInDown animated">
       <div class="section__asset">
         <h3>02</h3>
       </div>
@@ -190,7 +200,7 @@
         <p class="section__text">Items typically ship to your store from Makers within 48 hours of your order</p>
       </div>
     </div>
-    <div class="section__block">
+    <div class="section__block wow fadeInUp animated">
       <div class="section__asset">
         <h3>03</h3>
       </div>
@@ -202,25 +212,25 @@
   </div>
 </section>
 <section id="section5" class="section full grey">
-  <div class="section__image">
+  <div class="section__image wow fadeInLeftBig animated">
     <img src="./src/img/section_big_img1.jpg" alt="">
   </div>
   <div class="section__inner">
-    <h4 class="marg">About Us</h4>
-    <h3>We believe that <br> small can be big</h3>
-    <p class="section__text">Sparkinity was born because we believe in innovation.
+    <h4 class="marg wow fadeInLeft animated">About Us</h4>
+    <h3 class="wow fadeInRight animated">We believe that <br> small can be big</h3>
+    <p class="section__text wow fadeInLeft animated">Sparkinity was born because we believe in innovation.
 Data shows that small stores are better positioned than ever to take on retail giants as consumers  increasingly seek curation and a personalised touch. Agility is a powerful weapon and we seek to empower the agile.
 ​But to fulfil our vision we need to disrupt the age old system of distribution & wholesale. Our founding team has personal experiences & understanding  of the  expenses incurred , time and incredible effort that both buyers  & makers  make  to connect. All because of the need to get a physical glimpse of that  unicorn called the bestseller before risking an order.
 </p>
   </div>
-  <div class="section__image">
+  <div class="section__image wow fadeInRightBig animated">
     <img src="./src/img/section_big_img2.jpg" alt="">
   </div>
 </section>
 <section id="section6" class="section slides no-marg">
-  <h2 class="marg">How Test Works</h2>
+  <h2 class="marg wow fadeInDown animated">How Test Works</h2>
   <div class="section__inner owl-carousel">
-      <div class="section__block person">
+      <div class="wow fadeInLeftBig animated section__block person">
         <div class="avatar">
           <img src="./src/img/avatar1.jpg" alt="">
         </div>
@@ -228,7 +238,7 @@ Data shows that small stores are better positioned than ever to take on retail g
         <p class="section__text">Looking  forward to working with the Sparkinity team as they really understand the pressures of buying, I am looking for new products everyday and can't wait to try out their market test feature</p>
         <h3>&#10074;&#10074;</h3>
       </div>
-      <div class="section__block person">
+      <div class="wow fadeInUp animated section__block person">
         <div class="avatar">
           <img src="./src/img/avatar2.jpg" alt="">
         </div>
@@ -236,7 +246,7 @@ Data shows that small stores are better positioned than ever to take on retail g
         <p class="section__text">As a small store we are constantly on our toes to delight our customers and keep them coming back for more. Its a very competitive market and finding unique products that work with our brand values & price architecture is hard. Sparkinity seems like a promising & valuable concep</p>
         <h3>&#10074;&#10074;</h3>
       </div>
-      <div class="section__block person">
+      <div class="wow fadeInRightBig animated section__block person">
         <div class="avatar">
           <img src="./src/img/avatar3.jpg" alt="">
         </div>
@@ -256,20 +266,20 @@ Data shows that small stores are better positioned than ever to take on retail g
 </section>
 <section id="section7" class="section last grey">
 <div class="section__inner">
-  <h3 class="marg">Apply to join the community</h3>
-  <p class="section__text">
+  <h3 class="marg wow fadeInDown animated">Apply to join the community</h3>
+  <p class="section__text wow fadeIn animated">
   We are here to make a difference !
   <br>
   So whether you are a talented Maker or a Retailer  drop us a line to join our platform. We would love to hear from you
   </p>
-  <button type="button" name="button">register interest</button>
+  <button type="button" name="button" class="wow fadeInUp animated">register interest</button>
 </div>
-<div class="section__image">
+<div class="section__image wow fadeInRightBig animated">
   <img src="./src/img/section_big_img3.jpg" alt="">
 </div>
 </section>
 <footer class="footer">
-  <div class="footer__start">
+  <div class="footer__start wow fadeInLeftBig animated">
     <nav class="footer__nav">
       <a href="#" class="footer__link">home</a>
       <a href="#" class="footer__link">about us</a>
@@ -277,7 +287,7 @@ Data shows that small stores are better positioned than ever to take on retail g
     </nav>
     <button type="button" name="button" class="footer__button">contact</button>
   </div>
-  <div class="footer__end">
+  <div class="footer__end wow fadeInRightBig animated">
     <span class="footer__logo">test</span>
     <div class="footer__info">
       <a href="#">Terms & Condition</a>
@@ -286,6 +296,6 @@ Data shows that small stores are better positioned than ever to take on retail g
   </div>
 </footer>
 </body>
-    <script src="dist/js/main.js" ></script>
+
 
 </html>

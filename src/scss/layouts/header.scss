@@ -6,7 +6,15 @@
   position: fixed;
   z-index: 5;
   width: 60%;
+  padding: 0 20% 0 20%;
   background: #fff;
+  transition: .4s;
+  @media(max-width: 1024px){
+    height: 40px;
+    width: 80%;
+    padding: 0 10% 0 10%;
+  }
+
   &__logo{
     span{
     font-family: 'Myriad Pro Bold';
@@ -19,6 +27,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(max-width: 1024px){
+      transform: scale(1, 0);
+    transform-origin: top;
+    transition: .5s;
+    }
   }
   &__section{
     display: flex;
@@ -27,11 +40,25 @@
     width: 70%;
   }
   &__item{
-    button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    a{
       display: flex;
       align-items: center;
       span{
         padding-left: 10px;
+      }
+    }
+    svg{
+      transition: .4s;
+    }
+    &:hover svg {
+      transform: scale(1.2);
+      g{
+        path{
+          fill: #A6CED0;
+        }
       }
     }
   }
@@ -40,6 +67,22 @@
     display: inline-block;
     margin-top: 10px;
     width: auto;
+    svg{
+      transition: .4s;
+      g{
+        path{
+          transition: .4s;
+        }
+      }
+    }
+    &:hover svg {
+      transform: scale(1.2);
+      g{
+        path{
+          fill: #A6CED0;
+        }
+      }
+    }
     &:hover .header__dropdown{
       visibility: visible;
       opacity: 1;
@@ -57,13 +100,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    svg{
-      g{
-        path{
-              transition: .4s;
-        }
-      }
-    }
+
   }
   &__dropdown{
     visibility: hidden;
@@ -88,4 +125,32 @@
       }
     }
   }
+  &__menubtn{
+    @media (min-width: 1025px) {
+      display: none;
+  }
+  }
+  &__search{
+    button{
+      svg{
+        transition: .4s;
+        g{
+          path{
+            transition: .4s;
+          }
+        }
+      }
+      &:hover svg {
+        transform: scale(1.2);
+        g{
+          path{
+            fill: #A6CED0;
+          }
+        }
+      }
+    }
+  }
+}
+.sticky{
+  height: 50px;
 }
