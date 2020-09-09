@@ -5,6 +5,11 @@
   flex-direction: column;
   }
 }
+.row .section__image{
+  @media(max-width: 425px){
+  margin-bottom: 5%;
+  }
+}
 .row .section__image img{
   @media(min-width: 426px) and (max-width: 1024px){
     position: static;
