@@ -5,12 +5,18 @@
     align-items: center;
     padding: 2% 20% 2% 20%;
     border-bottom: 1px solid #D9D9D9;
+    @media(max-width: 425px){
+    padding: 2% 5% 2% 5%;
+    }
   }
   &__end{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2% 20% 2% 20%;
+    @media(max-width: 425px){
+    padding: 2% 5% 2% 5%;
+    }
   }
   &__nav{
     width: 20%;

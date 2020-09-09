@@ -4,7 +4,7 @@ $(document).ready(function(){
   arrows: false
   });
  $(function () {
-   var objt = $("div.person").length; // Считаем количество элементов с class="block"
+   var objt = $("div.person").length;
    if (objt > 3) {
      $(".owl-carousel").owlCarousel({
          items: 3,
@@ -16,7 +16,7 @@ $(document).ready(function(){
  });
 new WOW().init();
 $(window).scroll(function() {
-
+  if ($(window).width() > 1024) {
     if ($(this).scrollTop() > 1){
 
         $('header').addClass("sticky");
@@ -25,6 +25,12 @@ $(window).scroll(function() {
 
         $('header').removeClass("sticky");
     }
+  }
+
 
 });
+           $('.menuBtn').click(function () {
+               $('.menuBtn').toggleClass('active');
+           });
+
 });

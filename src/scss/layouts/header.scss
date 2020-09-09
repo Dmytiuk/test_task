@@ -11,12 +11,12 @@
   transition: .4s;
   @media(max-width: 1024px){
     height: 40px;
-    width: 80%;
-    padding: 0 10% 0 10%;
+    width: 90%;
+    padding: 0 5% 0 5%;
   }
 
   &__logo{
-    span{
+    a{
     font-family: 'Myriad Pro Bold';
     font-size: 3vmin;
     text-transform: uppercase;
@@ -148,6 +148,34 @@
           }
         }
       }
+    }
+  }
+}
+.menuBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  transition: .5s ease;
+  span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #000000;
+    transition: .5s ease;
+  }
+  &.active {
+    transition: .5s ease;
+    .top {
+      transform: translateY(0) translateX(0) rotate(45deg);
+    }
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      transform: translateY(-15px) translateX(0) rotate(-45deg);
     }
   }
 }

@@ -143,6 +143,9 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     margin: 0;
     width: 100%;
+    @media(max-width: 425px){
+    bottom: 10px;
+    }
     li {
         position: relative;
         transition: .4s;
@@ -155,6 +158,10 @@ $slick-opacity-not-active: 0.25 !default;
         border: 1px solid #707070;
         border-radius: 50px;
         cursor: pointer;
+        @media(max-width: 425px){
+        height: 6px;
+        width: 6px;
+        }
         button {
             border: 0;
             background: transparent;

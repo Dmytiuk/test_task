@@ -18,6 +18,9 @@ h1,h2,h3,h4,h5,h6{
   &__wrap{
     padding-top: 80px;
     position: relative;
+    @media(max-width: 425px){
+      padding-top: 40px;
+    }
   }
   &__info{
     position: absolute;
@@ -34,6 +37,9 @@ h1,h2,h3,h4,h5,h6{
       font-family: 'Abril Fatface Regular';
       color: #fff;
       letter-spacing: 0.08em;
+      @media(max-width: 425px){
+      font-size: 5vmin;
+      }
     }
     button{
       font-size: 1.7vmin;
@@ -45,6 +51,11 @@ h1,h2,h3,h4,h5,h6{
       padding: 20px;
       margin-top: 45px;
       transition: .4s;
+      @media(max-width: 425px){
+      width: 55%;
+      margin-top: 20px;
+      padding: 5px;
+      }
       &:hover{
         background: #f1f1f1;
         color: #333;
@@ -59,19 +70,31 @@ h1,h2,h3,h4,h5,h6{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  @media(max-width: 425px){
+  padding: 5%;
+  }
   h2{
     font-family: 'Myriad Pro Regular';
     font-size: 3.3vmin;
     font-weight: 500;
+    @media(max-width: 425px){
+    font-size: 8vmin;
+    }
   }
   h3{
     font-family: 'Abril Fatface Regular';
     font-size: 3.5vmin;
+    @media(max-width: 425px){
+    font-size: 6.5vmin;
+    }
   }
   h4{
     font-family: 'Aleo Light';
     font-weight: 600;
     font-size: 1.6vmin;
+    @media(max-width: 425px){
+    font-size: 4.6vmin;
+    }
   }
   &__inner{
     display: flex;
@@ -82,6 +105,10 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 0 10% 8%;
     display: flex;
     align-items: flex-start;
+    @media(max-width: 425px){
+    width: 100%;
+    margin: 5% 0 0 0;
+    }
     &:first-child{
       margin-left: 0;
     }
@@ -125,6 +152,9 @@ h1,h2,h3,h4,h5,h6{
   &__image{
     width: 45%;
     position: relative;
+    @media(max-width: 425px){
+      width: 100%;
+    }
     img{
       max-width: 100%;
       height: auto;
@@ -134,6 +164,10 @@ h1,h2,h3,h4,h5,h6{
       top: 30%;
       text-align: center;
       right: -20px;
+      @media(max-width: 425px){
+      top: 50%;
+      right: 35%;
+      }
     }
   }
   &__text{
@@ -141,5 +175,8 @@ h1,h2,h3,h4,h5,h6{
     color: #898989;
     line-height: 1.5em;
     font-size: 1.55vmin;
+    @media(max-width: 425px){
+    font-size: 3.55vmin;
+    }
   }
 }
