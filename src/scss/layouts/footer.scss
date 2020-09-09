@@ -1,0 +1,49 @@
+.footer{
+  &__start{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 20% 2% 20%;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  &__end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 20% 2% 20%;
+  }
+  &__nav{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link{
+    font-size: 1.3vmin;
+    font-family: 'Aleo Light';
+    text-transform: uppercase;
+  }
+  &__button{
+    width: 15%;
+    padding: 1%;
+    border: 1px solid #D9D9D9;
+    font-size: 1.3vmin;
+    font-family: 'Aleo Light';
+    text-transform: uppercase;
+  }
+  &__logo{
+    font-family: 'Myriad Pro Bold';
+    font-size: 3vmin;
+    text-transform: uppercase;
+  }
+  &__info{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    a{
+      font-family: 'Roboto Light';
+      color: #898989;
+      line-height: 1.5em;
+      font-size: 1.55vmin;
+    }
+  }
+}
