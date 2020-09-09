@@ -20,6 +20,9 @@
     font-family: 'Myriad Pro Bold';
     font-size: 3vmin;
     text-transform: uppercase;
+    @media(max-width: 425px){
+      font-size: 7vmin;
+    }
   }
   }
   &__nav{
@@ -29,8 +32,14 @@
     align-items: center;
     @media(max-width: 1024px){
       transform: scale(1, 0);
+      position: absolute;
     transform-origin: top;
     transition: .5s;
+    top: 40px;
+    right: 0;
+    background: #f9f9f9;
+    width: 90%;
+    padding: 0 5% 0 5%;
     }
   }
   &__section{
@@ -181,4 +190,7 @@
 }
 .sticky{
   height: 50px;
+}
+.opened{
+  transform: scale(1, 1);
 }

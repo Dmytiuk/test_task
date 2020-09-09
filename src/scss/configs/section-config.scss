@@ -1,7 +1,13 @@
 .row{
   flex-direction: row;
+
   @media(max-width: 425px){
   flex-direction: column;
+  }
+}
+.row .section__image img{
+  @media(min-width: 426px) and (max-width: 1024px){
+    position: static;
   }
 }
 .row .section__inner{
@@ -30,13 +36,19 @@
 .full, .last{
   flex-direction: row;
   padding: 0;
-  @media(max-width: 425px){
+  @media(max-width: 1024px){
   flex-direction: column;
   }
 }
 .last .section__image{
   width: 55%;
-  @media(max-width: 425px){
+  @media(min-width: 426px) and (max-width: 1024px){
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+  }
+  @media(max-width: 1024px){
   width: 100%;
   }
 }
@@ -47,7 +59,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  @media(max-width: 425px){
+  @media(max-width: 1024px){
   width: 90%;
   padding: 8% 5% 8% 5%;
   }
@@ -60,8 +72,12 @@
     background: #000000;
     padding: 20px;
     transition: .4s;
+    @media(max-width: 1024px){
+    width: 35%;
+    }
     @media(max-width: 425px){
     font-size: 3.7vmin;
+    width: 70%;
     }
     &:hover{
       background: #f1f1f1;
@@ -73,8 +89,14 @@
 
 .full .section__image{
   width: 33%;
-  @media(max-width: 425px){
+  @media(max-width: 1024px){
   width: 100%;
+  }
+  @media(min-width: 426px) and (max-width: 1024px){
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
   }
 }
 .full .section__inner{
@@ -82,8 +104,10 @@
   text-align: center;
   flex-direction: column;
   padding: 4% 4% 0 4%;
-  @media(max-width: 425px){
+
+  @media(max-width: 1024px){
   width: 92%;
+
   }
 }
 .slides{

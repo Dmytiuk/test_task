@@ -5,7 +5,7 @@
     align-items: center;
     padding: 2% 20% 2% 20%;
     border-bottom: 1px solid #D9D9D9;
-    @media(max-width: 425px){
+    @media(max-width: 1024px){
     padding: 2% 5% 2% 5%;
     flex-direction: column;
     }
@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 2% 20% 2% 20%;
-    @media(max-width: 425px){
+    @media(max-width: 1024px){
     padding: 5%;
     }
   }
@@ -23,9 +23,12 @@
     width: 20%;
     display: flex;
     justify-content: space-between;
-    @media(max-width: 425px){
+    @media(max-width: 1024px){
     width: 90%;
-    margin-top: 10%;
+    margin-top: 2%;
+    }
+    @media(max-width: 425px){
+      margin-top: 10%;
     }
   }
   &__link{
@@ -44,11 +47,17 @@
     font-family: 'Aleo Light';
     text-transform: uppercase;
     transition: .4s;
+    @media(max-width: 1024px){
+    width: 35%;
+    padding: 2%;
+    margin: 2% 0 2% 0;
+
+    }
     @media(max-width: 425px){
-    width: 70%;
-    padding: 5%;
-    margin: 10% 0 10% 0;
-    font-size: 3.7vmin;
+      width: 70%;
+      padding: 5%;
+          font-size: 3.7vmin;
+          margin: 10% 0 10% 0;
     }
     &:hover{
       border: 1px solid #000000;
@@ -69,7 +78,7 @@
     width: 25%;
     display: flex;
     justify-content: space-between;
-    @media(max-width: 425px){
+    @media(max-width: 1024px){
     width: 50%;
     }
     a{
