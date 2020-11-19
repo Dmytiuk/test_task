@@ -1,12 +1,10 @@
 @import "normalize/import-now";
 
 @import 'base/typography';
+@import 'base/variables';
 
 @import 'layouts/header';
-@import 'libs/navigation';
 @import 'layouts/footer';
 @import 'pages/home';
 @import 'libs/slick';
 @import 'libs/slick-theme';
-@import 'configs/carousel-config';
-@import 'configs/section-config';
